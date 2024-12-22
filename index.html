@@ -13,6 +13,12 @@
       content="Explora tendencias, descubre nuevos creadores y comparte tus mejores momentos en Around the U.S., la red social que conecta creatividad y comunidad. Conecta con personas que comparten tus intereses en Around the U.S., comparte momentos, crea historias y explora una comunidad vibrante llena de inspiración."
     />
     <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <title>Around the U.S.</title>
   </head>
   <body>
@@ -25,24 +31,103 @@
       </header>
       <main class="main">
         <section class="profile">
-          <div class="profile__avatar">
-            <img src="./images/avatar-image.png" alt="foto de perfil" />
-          </div>
-          <div class="profile__info">
-            <div class="profile__user">
-              <h1 class="profile__user-name">Jacques Costeau</h1>
-              <div class="profile__edit-button"></div>
+          <div class="profile__container">
+            <div class="profile__avatar">
+              <img src="./images/avatar-image.png" alt="foto de perfil" />
             </div>
-            <p class="profile__user-biography">Explorador</p>
+            <div class="profile__info">
+              <div class="profile__user">
+                <h1 class="profile__user-name">Jacques Costeau</h1>
+                <div class="profile__edit-button"></div>
+              </div>
+              <p class="profile__user-biography">Explorador</p>
+            </div>
           </div>
           <div class="profile__add-button"></div>
         </section>
         <section class="elements">
-          <div class="elements__card"></div>
+          <div class="elements__card">
+            <div class="elements__img-container">
+              <img
+                class="elements__img"
+                src="./images/image-card-1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="elements__info">
+              <h2 class="elements__card-title">Valle de Yosemite</h2>
+              <div class="elements__like-btn"></div>
+            </div>
+          </div>
+          <div class="elements__card">
+            <div class="elements__img-container">
+              <img
+                class="elements__img"
+                src="./images/image-card-2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="elements__info">
+              <h2 class="elements__card-title">Lago Louise</h2>
+              <div class="elements__like-btn"></div>
+            </div>
+          </div>
+          <div class="elements__card">
+            <div class="elements__img-container">
+              <img
+                class="elements__img"
+                src="./images/image-card-3.jpg"
+                alt=""
+              />
+            </div>
+            <div class="elements__info">
+              <h2 class="elements__card-title">Montañas Calvas</h2>
+              <div class="elements__like-btn"></div>
+            </div>
+          </div>
+          <div class="elements__card">
+            <div class="elements__img-container">
+              <img
+                class="elements__img"
+                src="./images/image-card-4.jpg"
+                alt=""
+              />
+            </div>
+            <div class="elements__info">
+              <h2 class="elements__card-title">Latemar</h2>
+              <div class="elements__like-btn"></div>
+            </div>
+          </div>
+          <div class="elements__card">
+            <div class="elements__img-container">
+              <img
+                class="elements__img"
+                src="./images/image-card-5.jpg"
+                alt=""
+              />
+            </div>
+            <div class="elements__info">
+              <h2 class="elements__card-title">Vanois National...</h2>
+              <div class="elements__like-btn"></div>
+            </div>
+          </div>
+          <div class="elements__card">
+            <div class="elements__img-container">
+              <img
+                class="elements__img"
+                src="./images/image-card-6.jpg"
+                alt=""
+              />
+            </div>
+            <div class="elements__info">
+              <h2 class="elements__card-title">Lago di Braies</h2>
+              <div class="elements__like-btn"></div>
+            </div>
+          </div>
         </section>
       </main>
       <footer class="footer">
-        <p class="footer__text"></p>
+        <p class="footer__text">© 2024 Around The U.S.</p>
       </footer>
     </div>
   </body>
