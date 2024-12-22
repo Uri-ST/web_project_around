@@ -61,3 +61,12 @@
 .elements__like-btn_active {
   background-image: url(../images/like-btn-active.png);
 }
+
+@media screen and (max-width: 320px) {
+  .elements {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -11,3 +11,15 @@
   color: #545454;
   font-size: 18px;
 }
+
+@media screen and (max-width: 320px) {
+  .footer {
+    width: 320px;
+    padding-bottom: 36px;
+  }
+
+  .footer__text {
+    font-size: 14px;
+    padding-left: 19px;
+  }
+}

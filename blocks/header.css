@@ -12,6 +12,23 @@
 .header__line {
   border: none;
   height: 1px;
-  background-color: white;
+  background-color: #545454;
   width: 100%;
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    width: 320px;
+    padding-top: 28px;
+    margin: 0;
+    margin-bottom: 42px;
+  }
+  .header__logo {
+    margin-left: 27px;
+    margin-bottom: 32px;
+  }
+  .header__line {
+    border: none;
+    height: 0.5px;
+  }
 }
