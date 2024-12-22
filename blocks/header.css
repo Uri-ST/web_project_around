@@ -1,0 +1,17 @@
+.header {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 880px;
+  margin-bottom: 40px;
+  padding-top: 45px;
+}
+.header__logo {
+  margin-bottom: 41px;
+}
+.header__line {
+  border: none;
+  height: 1px;
+  background-color: white;
+  width: 100%;
+}
