@@ -23,6 +23,35 @@
   </head>
   <body>
     <div class="page">
+      <!-- PopUp -->
+      <div class="popup popup_opened">
+        <div class="popup__container">
+          <div class="popup__close-btn"></div>
+          <form class="popup__form">
+            <h1 class="popup__title">Editar perfil</h1>
+            <fieldset class="popup__fieldset">
+              <input
+                class="popup__form-input"
+                type="text"
+                name="user-name"
+                id="name"
+                placeholder="Nombre"
+              />
+              <input
+                class="popup__form-input"
+                type="text"
+                name="user-biography"
+                id="biography"
+                placeholder="Acerda de mí"
+              />
+            </fieldset>
+            <button class="popup__save-btn popup__save-btn_active">
+              Guardar
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- PopUp -->
       <header class="header">
         <div class="header__logo">
           <img src="./images/logo.png" alt="Logotipo Around the U.S." />
@@ -37,7 +66,7 @@
             </div>
             <div class="profile__info">
               <div class="profile__user">
-                <h1 class="profile__user-name">Jacques Costeau</h1>
+                <h2 class="profile__user-name">Jacques Costeau</h2>
                 <div class="profile__edit-button"></div>
               </div>
               <p class="profile__user-biography">Explorador</p>
@@ -56,7 +85,7 @@
             </div>
             <div class="elements__info">
               <h2 class="elements__card-title">Valle de Yosemite</h2>
-              <div class="elements__like-btn"></div>
+              <div class="elements__like-btn elements__like-btn_active"></div>
             </div>
           </div>
           <div class="elements__card">
@@ -69,7 +98,7 @@
             </div>
             <div class="elements__info">
               <h2 class="elements__card-title">Lago Louise</h2>
-              <div class="elements__like-btn"></div>
+              <div class="elements__like-btn elements__like-btn_active"></div>
             </div>
           </div>
           <div class="elements__card">
@@ -82,7 +111,7 @@
             </div>
             <div class="elements__info">
               <h2 class="elements__card-title">Montañas Calvas</h2>
-              <div class="elements__like-btn"></div>
+              <div class="elements__like-btn elements__like-btn_active"></div>
             </div>
           </div>
           <div class="elements__card">
@@ -95,7 +124,7 @@
             </div>
             <div class="elements__info">
               <h2 class="elements__card-title">Latemar</h2>
-              <div class="elements__like-btn"></div>
+              <div class="elements__like-btn elements__like-btn_active"></div>
             </div>
           </div>
           <div class="elements__card">
@@ -108,7 +137,7 @@
             </div>
             <div class="elements__info">
               <h2 class="elements__card-title">Vanois National...</h2>
-              <div class="elements__like-btn"></div>
+              <div class="elements__like-btn elements__like-btn_active"></div>
             </div>
           </div>
           <div class="elements__card">
@@ -121,7 +150,7 @@
             </div>
             <div class="elements__info">
               <h2 class="elements__card-title">Lago di Braies</h2>
-              <div class="elements__like-btn"></div>
+              <div class="elements__like-btn elements__like-btn_active"></div>
             </div>
           </div>
         </section>
