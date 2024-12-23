@@ -55,7 +55,7 @@
 }
 
 .popup__form-input:focus {
-  outline: none;
+  outline-color: #8bc3ff;
 }
 .popup__save-btn {
   font-size: 18px;
@@ -94,4 +94,32 @@
 .popup__close-btn:hover {
   background-image: url(../images/close-icon-hover.png);
   cursor: pointer;
+}
+
+@media screen and (max-width: 320px) {
+  .popup__container {
+    width: 282px;
+    height: 322px;
+    margin-top: 123px;
+  }
+
+  .popup__form {
+    margin: 0 22px;
+  }
+
+  .popup__title {
+    font-size: 18px;
+  }
+
+  .popup__save-btn {
+    font-size: 14px;
+  }
+
+  .popup__close-btn {
+    position: absolute;
+    top: -44px;
+    right: 0;
+    width: 26px;
+    height: 26px;
+  }
 }
