@@ -26,26 +26,30 @@
       <!-- PopUp -->
       <div class="popup popup_opened">
         <div class="popup__container">
-          <div class="popup__close-btn"></div>
-          <form class="popup__form">
+          <div class="popup__close-btn" id="close-btn"></div>
+          <form class="popup__form" id="form">
             <h1 class="popup__title">Editar perfil</h1>
             <fieldset class="popup__fieldset">
               <input
                 class="popup__form-input"
                 type="text"
                 name="user-name"
-                id="name"
+                id="name-input"
                 placeholder="Nombre"
               />
               <input
                 class="popup__form-input"
                 type="text"
                 name="user-biography"
-                id="biography"
+                id="biography-input"
                 placeholder="Acerda de mí"
               />
             </fieldset>
-            <button class="popup__save-btn popup__save-btn_active">
+            <button
+              type="submit"
+              class="popup__save-btn popup__save-btn_active"
+              id="save-btn"
+            >
               Guardar
             </button>
           </form>
@@ -66,13 +70,17 @@
             </div>
             <div class="profile__info">
               <div class="profile__user">
-                <h2 class="profile__user-name">Jacques Costeau</h2>
-                <div class="profile__edit-button"></div>
+                <h2 class="profile__user-name" id="user-name">
+                  Jacques Costeau
+                </h2>
+                <div class="profile__edit-btn" id="edit-btn"></div>
               </div>
-              <p class="profile__user-biography">Explorador</p>
+              <p class="profile__user-biography" id="user-biography">
+                Explorador
+              </p>
             </div>
           </div>
-          <div class="profile__add-button"></div>
+          <div class="profile__add-btn" id="add-btn"></div>
         </section>
         <section class="elements">
           <div class="elements__card">
@@ -159,6 +167,6 @@
         <p class="footer__text">&#169; 2024 Around The U.S.</p>
       </footer>
     </div>
-    <script src="./scripts/scrip.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

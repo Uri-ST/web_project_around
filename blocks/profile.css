@@ -42,7 +42,7 @@
   margin: 0;
 }
 
-.profile__edit-button {
+.profile__edit-btn {
   width: 24px;
   height: 24px;
   background-image: url(../images/edit-button.png);
@@ -52,12 +52,12 @@
   transition: ease-in-out 0.2s;
 }
 
-.profile__edit-button:hover {
+.profile__edit-btn:hover {
   background-image: url(../images/edit-button-hover.png);
   cursor: pointer;
 }
 
-.profile__add-button {
+.profile__add-btn {
   width: 150px;
   height: 50px;
   background-image: url(../images/add-button.png);
@@ -67,7 +67,7 @@
   transition: ease-in-out 0.2s;
 }
 
-.profile__add-button:hover {
+.profile__add-btn:hover {
   background-image: url(../images/add-button-hover.png);
   cursor: pointer;
 }
@@ -98,7 +98,7 @@
     padding-bottom: 14px;
   }
 
-  .profile__edit-button {
+  .profile__edit-btn {
     width: 18px;
     height: 18px;
   }
@@ -108,7 +108,7 @@
     text-align: center;
   }
 
-  .profile__add-button {
+  .profile__add-btn {
     width: 284px;
     background-image: url(../images/add-button-mobile.png);
   }
