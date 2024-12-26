@@ -12,14 +12,32 @@
   font-size: 18px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 900px) {
   .footer {
-    width: 320px;
+    width: 520px;
     padding-bottom: 36px;
   }
+  .footer__text {
+    padding-left: 0;
+  }
+}
 
+@media screen and (max-width: 625px) {
+  .footer {
+    width: 350px;
+    padding-bottom: 36px;
+  }
   .footer__text {
     font-size: 14px;
+    padding-left: 29px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .footer {
+    width: 320px;
+  }
+  .footer__text {
     padding-left: 19px;
   }
 }
