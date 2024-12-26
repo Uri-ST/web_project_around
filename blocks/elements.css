@@ -53,13 +53,13 @@
   transition: ease-in-out 0.2s;
 }
 
+.elements__like-btn_active {
+  background-image: url(../images/like-btn-active.png);
+}
+
 .elements__like-btn:hover {
   background-image: url(../images/like-btn-hover.png);
   cursor: pointer;
-}
-
-.elements__like-btn_active {
-  background-image: url(../images/like-btn-active.png);
 }
 
 @media screen and (max-width: 900px) {

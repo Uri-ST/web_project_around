@@ -1,6 +1,7 @@
 const editBtn = document.querySelector("#edit-btn");
 const closeBtn = document.querySelector("#close-btn");
 const saveBtn = document.querySelector("#save-btn");
+const likeButtons = document.querySelectorAll(".elements__like-btn");
 const userName = document.querySelector("#user-name");
 const userBiography = document.querySelector("#user-biography");
 const popUp = document.querySelector(".popup");
@@ -34,4 +35,14 @@ form.addEventListener("submit", (evt) => {
 
   // Cerrar el popup después de guardar los cambios
   popUp.classList.remove("popup_opened");
+});
+
+likeButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    button.classList.toggle("elements__like-btn_active");
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  likeButtons.classList.remove("elements__like-btn_active");
 });
