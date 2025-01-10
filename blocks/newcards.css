@@ -1,0 +1,129 @@
+.new-card {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.new-card_opened {
+  display: flex;
+}
+
+.new-card__container {
+  margin: auto;
+  background-color: white;
+  color: #c4c4c4;
+  width: 430px;
+  height: 330px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.new-card__form {
+  margin: 0 35px;
+}
+
+.new-card__title {
+  color: black;
+  font-size: 24px;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 41px;
+}
+
+.new-card__fieldset {
+  border: transparent;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.new-card__form-input {
+  border: transparent;
+  font-size: 14px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #c4c4c4;
+  width: 100%;
+  padding: 13px 0;
+}
+
+.new-card__form-input::placeholder {
+  color: #c4c4c4;
+}
+
+.new-card__form-input:focus {
+  outline-color: #8bc3ff;
+}
+.new-card__save-btn {
+  font-size: 18px;
+  color: #c4c4c4;
+  background-color: white;
+  border: 1px solid #c4c4c4;
+  border-radius: 2px;
+  width: 100%;
+  height: 50px;
+}
+
+.new-card__save-btn_active {
+  background-color: black;
+  color: white;
+  transition: ease-in-out 0.2s;
+}
+
+.new-card__save-btn_active:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.new-card__close-btn {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/close-icon.png);
+  background-size: contain;
+  background-position: center;
+  z-index: 2;
+  transition: ease-in-out 0.2s;
+}
+
+.new-card__close-btn:hover {
+  background-image: url(../images/close-icon-hover.png);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 320px) {
+  .new-card__container {
+    width: 282px;
+    height: 322px;
+    margin-top: 123px;
+  }
+
+  .new-card__form {
+    margin: 0 22px;
+  }
+
+  .new-card__title {
+    font-size: 18px;
+  }
+
+  .new-card__save-btn {
+    font-size: 14px;
+  }
+
+  .new-card__close-btn {
+    position: absolute;
+    top: -44px;
+    right: 0;
+    width: 26px;
+    height: 26px;
+  }
+}
