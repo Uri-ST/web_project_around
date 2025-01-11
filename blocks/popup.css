@@ -6,6 +6,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .popup_opened {
@@ -99,9 +100,9 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 500px) {
   .popup__container {
-    width: 282px;
+    width: 322px;
     height: 322px;
     margin-top: 123px;
   }
@@ -124,5 +125,13 @@
     right: 0;
     width: 26px;
     height: 26px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .popup__container {
+    width: 282px;
+    height: 322px;
+    margin-top: 123px;
   }
 }
