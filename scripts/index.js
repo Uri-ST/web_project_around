@@ -187,3 +187,15 @@ function addLikeButtonEvent() {
 document.addEventListener("DOMContentLoaded", () => {
   addLikeButtonEvent(); // Asigna el evento a los botones de like al cargar la página
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Asigna eventos de eliminación a los botones existentes
+  document.querySelectorAll(".elements__trash-icon").forEach((trashButton) => {
+    trashButton.addEventListener("click", (event) => {
+      const card = event.target.closest(".elements__card");
+      if (card) {
+        card.remove(); // Elimina la tarjeta correspondiente
+      }
+    });
+  });
+});
