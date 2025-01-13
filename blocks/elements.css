@@ -43,6 +43,10 @@
   object-fit: cover;
 }
 
+.elements__img:hover {
+  cursor: pointer;
+}
+
 .elements__info {
   color: black;
   display: flex;

@@ -199,3 +199,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// ventana nodal de imagen
+const popupImage = document.querySelector(".popup-card");
+const closeImageBtn = document.querySelector("#image-close-btn");
+const image = document.querySelectorAll(".popup-card__image");
+
+document.addEventListener("DOMContentLoaded", () => {
+  popupImage.classList.remove("popup-card_opened");
+});
+
+closeImageBtn.addEventListener("click", () => {
+  popupImage.classList.remove("popup-card_opened");
+});
