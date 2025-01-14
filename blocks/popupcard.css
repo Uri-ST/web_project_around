@@ -43,7 +43,6 @@
 
 @media screen and (max-width: 890px) {
   .popup-card {
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -61,7 +60,6 @@
     width: 400px;
   }
   .popup-card__close-btn {
-    position: absolute;
     top: -44px;
     right: 0;
     width: 26px;
@@ -83,8 +81,17 @@
   }
 
   .popup-card__close-btn {
-    position: absolute;
     top: 18px;
+    margin-bottom: 9px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .popup-card__close-btn {
+    top: -58px;
     margin-bottom: 9px;
     right: 0;
     width: 22px;

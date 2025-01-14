@@ -88,6 +88,11 @@
   cursor: pointer;
 }
 
+.elements__like-btn.elements__like-btn_active:hover {
+  background-image: url(../images/like-btn-active.png);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 900px) {
   .elements {
     width: 620px;

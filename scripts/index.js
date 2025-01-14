@@ -44,15 +44,18 @@ initialCards.forEach((card) => {
     </div>
     <div class="elements__info">
       <h2 class="elements__card-title">${card.name}</h2>
-      <div
-        class="elements__like-btn"
-        id="like-btn"
-      ></div>
+      <div class="elements__like-btn" id="like-btn"></div>
     </div>
   `;
 
   // Inserta la tarjeta en el contenedor
   elementsContainer.appendChild(cardElement);
+
+  // Agregar evento de clic en la imagen para abrir el popup
+  const imageElement = cardElement.querySelector(".elements__img");
+  imageElement.addEventListener("click", () => {
+    openImagePopup(card.link); // Llama a la función que abre el popup con la imagen
+  });
 });
 
 // variables para modificar nombre de usuario
@@ -169,6 +172,12 @@ function createNewCard(name, link) {
 
   // Llama a la función para asignar el evento de "like" al nuevo botón
   addLikeButtonEvent();
+
+  // Agregar evento de clic en la imagen para abrir el popup
+  const newImage = cardContainer.querySelector(".elements__img");
+  newImage.addEventListener("click", () => {
+    openImagePopup(link); // Llama a la función que abre el popup con la imagen
+  });
 }
 
 // Función para agregar el evento de clic en los botones de like
@@ -201,14 +210,29 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // ventana nodal de imagen
-const popupImage = document.querySelector(".popup-card");
-const closeImageBtn = document.querySelector("#image-close-btn");
-const image = document.querySelectorAll(".popup-card__image");
+function openImagePopup(imageLink) {
+  const popupImage = document.querySelector(".popup-card");
+  const popupImageElement = document.querySelector(".popup-card__image");
+
+  // Establecer el src de la imagen
+  popupImageElement.src = imageLink;
+
+  // Mostrar el popup
+  popupImage.classList.add("popup-card_opened");
+}
 
 document.addEventListener("DOMContentLoaded", () => {
-  popupImage.classList.remove("popup-card_opened");
+  const closeImageBtn = document.querySelector("#image-close-btn");
+
+  closeImageBtn.addEventListener("click", () => {
+    const popupImage = document.querySelector(".popup-card");
+    popupImage.classList.remove("popup-card_opened");
+  });
 });
 
-closeImageBtn.addEventListener("click", () => {
+document.addEventListener("DOMContentLoaded", () => {
+  const popupImage = document.querySelector(".popup-card");
+
+  // Asegúrate de que la clase "popup-card_opened" no esté presente al cargar la página
   popupImage.classList.remove("popup-card_opened");
 });
